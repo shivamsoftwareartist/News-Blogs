@@ -3,7 +3,6 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1><a href="{% url 'home' %}">HOME</a></h1>
 {% if user.is_authenticated %}
 	Hi {{ user.username }}!
 	<p><a href="{% url 'logout' %}">Log Out</a></p>
@@ -14,4 +13,4 @@
 	<a href="{% url 'signup' %}">Sign Up</a>
 
 {% endif %}
-{% endblock content %}	
+{% endblock content %}
